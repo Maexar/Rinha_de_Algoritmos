@@ -114,6 +114,7 @@ int partition(int arr[], int low, int high) {
     return (i + 1);
 }
 
+
 void mergeSort(int arr[], int l, int r) {
     if (l < r) {
         int m = l + (r - l) / 2;
@@ -213,6 +214,7 @@ void heapSort(int arr[], int n) {
     }
 }
 
+
 int getMax(int arr[], int n) {
     int max = arr[0];
     for (int i = 1; i < n; i++)
@@ -255,5 +257,8 @@ void radixSort(int arr[], int n) {
     for (int exp = 1; max / exp > 0; exp *= 10)
         countingSort(arr, n, exp);
 }
+
+
+
 
 #endif
